@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.successMessage{
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5svh 10vw;
+    font-size: 50px;
+    text-align: center;
+}
+
+.tick{
+    width: 200px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px black;
+}
+
+button{
+    width: 300px;
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    background-color: #ff8800;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 2px 5px 20px black;
+    padding:17px 20px;
+    margin-top: 40px;
+}
+
+button:hover{
+    background-color: orangered;
+}
+
+.navbar{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    width: 150px;
+    margin:0 20px;
+}
+
+.navbar a{
+    margin:0 20px;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(orange,rgb(245, 78, 17));
+    border: none;
+    border-radius: 30px;
+    width: 100px;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-image: linear-gradient(rgb(245, 78, 17),orange);
+}
+
+.incorrect{
+    width: 200px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px black;
+}
+
+@media (max-width: 767px){
+    .successMessage{
+        font-size: 30px;
+        height: 80svh;
+    }
+
+    .tick{
+        width: 150px;
+    }
+
+    .navbar img{
+        width: 100px;
+        margin: 0 15px;
+    }
+
+    .navbar a{
+        padding: 7px 11px;
+        margin: 0 15px;
+    }
+
+    button{
+        width: 250px;
+        padding: 13px 15px;
+    }
+
+    .incorrect{
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px){
+    .successMessage{
+        font-size: 14px;
+        height: 60svh;
+    }
+
+    .tick{
+        width: 100px;
+    }
+
+    .navbar img{
+        width: 75px;
+        margin: 0 10px;
+    }
+
+    .navbar a{
+        padding: 5px 8px;
+        margin: 0 10px;
+    }
+
+    button{
+        width: 150px;
+        font-size: 13px;
+        padding: 8px 10px;
+        border-radius: 10px;
+    }
+
+    .incorrect{
+        width: 100px;
+    }
+}

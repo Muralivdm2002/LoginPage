@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+.loginForm h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #ff8800;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    background-color: ghostwhite;
+    padding: 10svh 10vw;
+}
+
+.submit input {
+    width: 300px;
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    background-color: #ff8800;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 2px 5px 20px black;
+}
+
+.submit input:hover {
+    background-color: orangered;
+}
+
+.loginForm div{
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+input{
+    padding: 20px;
+    width: 500px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+input:focus{
+    outline: none;
+    border:2px solid rgb(158, 220, 245);
+    background-color: rgb(207, 233, 243);
+    box-shadow: 2px 2px 20px black;
+}
+
+.submit{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px){
+    .loginForm h1{
+        font-size: 30px;
+    }
+
+    .login{
+        padding: 8svh 8vw;
+    }
+
+    .submit input{
+        width: 250px;
+        padding: 13px 15px;
+    }
+
+    .loginForm div{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    input{
+        padding: 15px;
+        width: 390px;
+    }
+}
+
+@media (max-width: 480px){
+    .loginForm h1{
+        font-size: 24px;
+    }
+
+    .login{
+        padding: 6svh 6vw;
+    }
+
+    .submit input{
+        width: 170px;
+        font-size: 14px;
+        border-radius: 12px;
+        padding: 9px 12px;
+    }
+
+    .loginForm div{
+        margin-top: 20px;
+        font-size: 17px;
+    }
+
+    input{
+        padding: 8px;
+        width: 220px;
+        border-radius: 12px;
+    }
+}
